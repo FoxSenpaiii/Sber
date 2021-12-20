@@ -1,0 +1,124 @@
+﻿<Window x:Class="SberCloudPanin.List.CreatAcc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SberCloudPanin.List"
+        mc:Ignorable="d"
+        Title="CreatAcc" Height="1080" Width="1920" WindowStyle="None">
+    <Grid>
+        <StackPanel
+            VerticalAlignment="Top"
+            Width="1920"
+            Height="70"
+            Background="#343F48">
+
+            <Image  Width="368"
+                    Height="53"
+                    Margin="20 5 0 0"
+                    HorizontalAlignment="Left"
+                    Source="/Resource/mainlogo.png"/>
+
+
+
+            <Button Style="{StaticResource BtnNavigate}"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0 -60 30 0"
+                    Background="#CB6565"/>
+
+            <Button Style="{StaticResource BtnNavigate}"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0 -60 75 0"
+                    Background="#C4C4C4"/>
+
+            <Button Style="{StaticResource BtnNavigate}"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0 -60 120 0"
+                    Background="#C4C4C4"/>
+        </StackPanel>
+
+
+        <StackPanel
+            Width="874"
+            Height="1046">
+
+            <Image Source="/Resource/sbercloud.png"
+                   Margin="50 100 0 0"/>
+
+            <TextBlock Text="Создать аккаунт SberCloud"
+                       FontSize="50"
+                       Margin="80 20 0 0"/>
+
+            <TextBlock
+                Text="Логин"
+                Margin="80 30 0 0"
+                FontSize="35"/>
+
+            <TextBox Style="{DynamicResource TbBorder}" 
+                     Width="668"
+                     Height="54"
+                     Margin="-70 10 0 0"
+                     Text="Username"
+                     FontSize="30"
+                     Foreground="#696969"
+                    />
+
+            <TextBlock
+                Text="Почта"
+                Margin="80 30 0 0"
+                FontSize="35"/>
+
+            <TextBox Style="{DynamicResource TbBorder}"
+                     Width="668"
+                     Height="54"
+                     Margin="-70 10 0 0"
+                     Text="Email"
+                     FontSize="30"
+                     Foreground="#696969"/>
+
+            <TextBlock
+                Text="Пароль"
+                Margin="80 30 0 0"
+                FontSize="35"/>
+
+            <TextBox Style="{DynamicResource TbBorder}" 
+                     Width="668"
+                     Height="54"
+                     Margin="-70 10 0 0"
+                     Text="Password"
+                     FontSize="30"
+                     Foreground="#696969"/>
+
+            <TextBlock
+                Text="Повторите пароль"
+                Margin="80 30 0 0"
+                FontSize="35"/>
+
+            <TextBox Style="{DynamicResource TbBorder}" 
+                     Width="668"
+                     Height="54"
+                     Margin="-70 10 0 0"
+                     Text="Password confirm"
+                     FontSize="30"
+                     Foreground="#696969"/>
+
+
+            <Button
+                Content="Создать аккаунт"
+                FontSize="35"
+                Foreground="#ffff"
+                Width="400"
+                Height="80" Style="{DynamicResource BtnCreatAcc}"
+                Background="#343f48"
+                Margin="0 20 0 0"
+                />
+
+
+
+        </StackPanel>
+
+    </Grid>
+</Window>
